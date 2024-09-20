@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const authRoutes = require('./routes/authRoutes');
 const homeRoutes = require('./routes/homeRoutes');
+const postRoutes = require("./routes/postRoutes")
 
 require("./config/database");
 
@@ -16,6 +17,7 @@ app.use(cors());
 
 app.use('/auth', authRoutes);
 app.use('/home', homeRoutes);
+app.use('/posts', postRoutes);
 
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
