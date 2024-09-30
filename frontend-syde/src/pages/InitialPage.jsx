@@ -77,6 +77,9 @@ function InitialPage() {
                             </button>
                         </>
                     )}
+                    <p className="text-muted mt-4" style={{ fontSize: "0.9rem" }}>
+                        The first request may take up to 50 seconds due to a delay. I apologize for the inconvenience.
+                    </p>
                 </div>
             </div>
         </>
